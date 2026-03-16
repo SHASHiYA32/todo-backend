@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <!-- TEST SERVLET -->
+    <servlet>
+        <servlet-name>TestServlet</servlet-name>
+        <servlet-class>com.taskflow.TestServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>TestServlet</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- REGISTER -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.taskflow.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- LOGIN -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.taskflow.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- ADD TASK -->
+    <servlet>
+        <servlet-name>AddTaskServlet</servlet-name>
+        <servlet-class>com.taskflow.AddTaskServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddTaskServlet</servlet-name>
+        <url-pattern>/addTask</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- GET TASKS -->
+    <servlet>
+        <servlet-name>GetTasksServlet</servlet-name>
+        <servlet-class>com.taskflow.GetTasksServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetTasksServlet</servlet-name>
+        <url-pattern>/getTasks</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- DELETE TASK -->
+    <servlet>
+        <servlet-name>DeleteTaskServlet</servlet-name>
+        <servlet-class>com.taskflow.DeleteTaskServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteTaskServlet</servlet-name>
+        <url-pattern>/deleteTask</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- UPDATE TASK -->
+    <servlet>
+        <servlet-name>UpdateTaskServlet</servlet-name>
+        <servlet-class>com.taskflow.UpdateTaskServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UpdateTaskServlet</servlet-name>
+        <url-pattern>/updateTask</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- GET USER -->
+    <servlet>
+        <servlet-name>GetUserServlet</servlet-name>
+        <servlet-class>com.taskflow.GetUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetUserServlet</servlet-name>
+        <url-pattern>/getUser</url-pattern>
+    </servlet-mapping>
+
+</web-app>
